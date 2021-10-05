@@ -1,0 +1,43 @@
+{
+  "name": "gdsc-nie-website",
+  "version": "1.0.0",
+  "description": "Official website of google developers student club, NIE Mysore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iresharma/gdsc-nie-website.git"
+  },
+  "keywords": [
+    "gdsc",
+    "website",
+    "webpack"
+  ],
+  "author": "GDSC-NIE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iresharma/gdsc-nie-website/issues"
+  },
+  "homepage": "https://github.com/iresharma/gdsc-nie-website#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.38.2",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
