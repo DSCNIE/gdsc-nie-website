@@ -1,11 +1,12 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
     path: __dirname + "/dist/",
-    filename: "output.bundle.js",
+    filename: "js/output.bundle.js",
   },
   //   This is to generate source maps
   devtool: "source-map",
@@ -25,6 +26,10 @@ module.exports = {
         title: "GDSC-NIE",
         viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
       },
+    }),
+    new MiniCssExtractPlugin({
+      filename: "css/styles.css",
+      chunkFilename: "css/[id].css",
     }),
   ],
   module: {
@@ -48,6 +53,18 @@ module.exports = {
             options: { outputPath: "css/", name: "[name].min.css" },
           },
           "sass-loader",
+          "postcss-loader",
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: "../" },
+          },
+          "css-loader",
+          "postcss-loader",
         ],
       },
       {
