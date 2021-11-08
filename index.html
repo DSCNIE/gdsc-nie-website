@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDSC NIE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div id="wrapperload">
+        <div class="elem">
+          <img src="./imgs/name.png" alt="" />
+        </div>
+        <div class="elem">
+          <h3>Student driven technical community.</h3>
+        </div>
+        <div class="elem">
+          <h3>building the tech culture campus wide.</h3>
+        </div>
+        <div class="elem">
+          <img src="./imgs/name.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="bg">
+      <nav>
+        <img class="navitem" src="./imgs/logo.png" alt="" />
+        <div id="links">
+          <a class="navitem" href="#">Home</a>
+          <a class="navitem" href="https://leaderboard.gdscnie.in">Leaderboard</a>
+          <a class="navitem" href="https://blog.gdscnie.in">Blog</a>
+          <a class="navitem" href="mailto:dsc@nie.ac.in">Contact</a>
+          <i class="navitem ri-discord-line"></i>
+          <i id="menu" class="navitem ri-menu-2-line"></i>
+        </div>
+      </nav>
+      <div id="sections">
+        <img class="leftitem" id="splash" src="./imgs/rightSplash.png" alt="" />
+        <div id="left">
+          <div id="smline"></div>
+          <h4 class="leftitem">Hello, we are 👋</h4>
+          <!-- <img class="leftitem" src="./imgs/name.png" alt="" /> -->
+          <span class="leftitem" id="logo" style="font-size: 2rem;">
+            <span style="font-size: 3rem;">Google Developer Student Club</span><br /> NIE
+          </span>
+          <div class="leftitem" id="playbtn">
+            <img src="./imgs/hammer-outline.svg" alt="" />
+            <h5>our website <span class="bold">is currently in works</span></h5>
+          </div>
+          <div class="leftitem" id="contact">
+            <h3>Contact us</h3>
+            <h6>Email : <span>dsc@nie.ac.in</span></h6>
+            <h6>Contact Number: <span>+91-8582871444</span></h6>
+          </div>
+        </div>
+        <div id="right">
+          <lottie-player
+            src="https://assets4.lottiefiles.com/packages/lf20_960zqus3.json"
+            background="transparent"
+            class="lottie"
+            speed="1"
+            style="width: 40vw; height: 70vh"
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <script>
+      var bg = document.querySelector("#bg");
+      setTimeout(() => {
+        bg.style.transform = "scale(.8)";
+        bg.style.borderRadius = "10px";
+        bg.style.boxShadow = "0 150px 45px -100px rgba(0,0,0,0.2)";
+      }, 15000);
+    </script>
+  </body>
+</html>
